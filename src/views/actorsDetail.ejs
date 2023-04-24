@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= actor.first_name %> <%= actor.last_name %>
+    </title>
+    <link rel='stylesheet' href='/css/style.css' />
+
+</head>
+
+<body>
+    <div class="info">
+    <div class="info">
+    <figure>
+        <img src="/img/logo-DH.png" alt="Logo Digital House">
+    </figure>
+    
+    <h1>
+        <%= actor.first_name %> <%= actor.last_name %></a>
+    </h1>
+    <br>
+    <p>RATING: <%= actor.rating %>
+    </p>
+   <!--  <p> <h3>TRABAJÓ EN:</h3>
+        <% allMovies.forEach(movie => { %>
+            <li><a href="/actors/detail/<%= movie.id %>"><%= movie.title %></a></li>
+            
+       <% }) %>
+   </p> -->
+   
+
+                <br>
+                <br>
+                <section class="botones">
+                    
+                  <div>  <a class="botonAgregar" href="/actors/edit/<%= actor.id %>">Modificar Actor</a></div>
+                  <div>  <a class="botonBorrar" href="/actors/delete/<%= actor.id %>">Eliminar Actor</a></div>
+                  <div>  <a class="botonVolver" href="/actors">Listado de actores</a></div>
+                </section>
+            </div>
+           </div> 
+</body>
+
+</html>
